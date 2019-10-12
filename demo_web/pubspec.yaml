@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  key_value_store_web: ^1.0.0
   provider: ^3.1.0
 
   demo:

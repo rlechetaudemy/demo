@@ -1,6 +1,7 @@
 import 'package:demo/demo.dart';
 import 'package:demo/home.dart';
-import 'package:demo_app/impl.dart';
+import 'package:demo_app/impl/impl.dart';
+import 'package:demo_app/impl/prefs.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider(
-          builder: (context) => DemoServices(interface: AppInterface()),
+          builder: (context) => DemoServices(
+            interface: AppInterface(),
+            prefs: AppPrefs(),
+          ),
         )
       ],
       child: MaterialApp(
@@ -26,4 +30,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

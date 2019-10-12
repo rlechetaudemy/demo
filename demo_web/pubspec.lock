@@ -88,6 +88,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
+  key_value_store:
+    dependency: transitive
+    description:
+      name: key_value_store
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  key_value_store_web:
+    dependency: "direct main"
+    description:
+      name: key_value_store_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   matcher:
     dependency: transitive
     description:
