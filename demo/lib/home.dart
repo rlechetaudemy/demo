@@ -1,5 +1,6 @@
-import 'package:demo_web/web.dart';
+import 'package:demo/demo.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -52,6 +53,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _onClickGoogle() {
-    launchWeb("https://google.com");
+
+    DemoServices services = DemoServices.get(context);
+
+    services.interface.launch("https://google.com");
   }
 }

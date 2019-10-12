@@ -1,7 +1,15 @@
-library demo;
+import 'package:flutter/cupertino.dart';
+import 'package:provider/provider.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 2;
+class DemoServices {
+  static DemoServices get(BuildContext context, {bool listen = false}) =>
+      Provider.of<DemoServices>(context, listen: listen);
+
+  DemoInterface interface;
+
+  DemoServices({@required this.interface});
+}
+
+abstract class DemoInterface {
+  launch(String url);
 }
