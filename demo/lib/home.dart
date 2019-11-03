@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -52,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // Mostra como usar imagens do pacote
             Text("Imagem do pacote demo"),
             SizedBox(height: 10,),
-            Image(image: AssetImage("assets/imgs/android.png",package: "demo"),width: 100,),
+            Image.asset("assets/imgs/android.png", package: "demo",width: 200),
             SizedBox(height: 10,),
             Text(
               'You have pushed the button this many times:',

@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:demo/demo.dart';
 
 abstract class PrefsInterface {
