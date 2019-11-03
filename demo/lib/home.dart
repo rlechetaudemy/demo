@@ -49,6 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // Mostra como usar imagens do pacote
+            Text("Imagem do pacote demo"),
+            SizedBox(height: 10,),
+            Image(image: AssetImage("assets/imgs/android.png",package: "demo"),width: 100,),
+            SizedBox(height: 10,),
             Text(
               'You have pushed the button this many times:',
             ),
